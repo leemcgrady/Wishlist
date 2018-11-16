@@ -103,7 +103,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-/dailyfresh/settings.py
+settings.py
 *.ini
 *.conf
 *.pid
