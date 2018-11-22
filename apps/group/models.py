@@ -8,7 +8,7 @@ class Group(BaseModel):
     '''分组模型类'''
 
     name = models.CharField(max_length=20, verbose_name='分组名称')
-    create_user = models.ForeignKey('User', on_delete=models.CASCADE, verbose_name='创建者')
+    create_user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='创建者')
     desc = models.CharField(max_length=256, verbose_name='分组简介')
     image = models.ImageField(upload_to='group', verbose_name='分组图片')
 
@@ -26,8 +26,8 @@ class GroupUser(BaseModel):
         (0, '已加入'),
         (1, '被移除'),
     )
-    group = models.ForeignKey('Group', on_delete=models.CASCADE, verbose_name='所属组')
-    user = models.ForeignKey('User', on_delete=models.CASCADE, verbose_name='组内用户')
+    group = models.ForeignKey(Group, on_delete=models.CASCADE, verbose_name='所属组')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='组内用户')
     status = models.SmallIntegerField(default=0, choices=status_choices, verbose_name='用户状态')
 
     class Meta:
