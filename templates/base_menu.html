@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}愿望清单{% endblock title %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li {% if page == 'group' %}class="active"{% endif %}><a href="{% url "group:group" %}">分组</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li {% if page == 'wish' %}class="active"{% endif %}><a href="{% url "wish:wish" %}">愿望</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% block right_content %}{% endblock right_content %}
+{% endblock body %}
+

@@ -1,0 +1,30 @@
+{% extends "base_menu.html" %}
+
+{% block title %}愿望清单{% endblock title %}
+
+{% block right_content %}
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h1 class="page-header">分组</h1>
+
+        <h2 class="sub-header">分组列表</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>组名</th>
+                    <th>简介</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="{% url "group:user" %}">哈哈哈</a></td>
+                    <td>呵呵呵</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock right_content %}
+
+
+
