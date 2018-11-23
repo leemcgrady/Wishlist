@@ -5,8 +5,13 @@
 .sub-header {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
+    display: inline-block;
 }
-
+.add-group {
+    height: 40px;
+    border-bottom: 1px solid #eee;
+    float: right;
+}
 /*
  * Top navigation
  * Hide default border to remove 1px line.
@@ -99,9 +104,9 @@
  * 登陆
  */
 
-.form-signin {
+.form-signin, .form-register {
     max-width: 330px;
-    padding: 40px 15px 40px 15px;
+    padding: 60px 15px 40px 15px;
     margin: 0 auto;
 }
 .form-signin .form-signin-heading,
@@ -123,7 +128,7 @@
 .form-signin .form-control:focus {
     z-index: 2;
 }
-.form-signin input[type="email"] {
+.form-signin input[type="text"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -133,3 +138,69 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+/*
+ * 注册
+ */
+
+.form-register .form-signin-register,
+.form-register .checkbox {
+    margin-bottom: 10px;
+}
+.form-register .checkbox {
+    font-weight: normal;
+}
+.form-register .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-register .form-control:focus {
+    z-index: 2;
+}
+.form-register input[type="text"] {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-register input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-register input[type="email"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-register .error_tip{
+    float:left;
+    height:30px;
+    line-height:30px;
+    margin-left:5px;
+    margin-bottom:10px;
+    color:#e62e2e;
+    display:none;
+}
+
+/*
+ * 添加分组
+ */
+.group-add ul {
+    margin-top: 10px;
+}
+.group-add li{
+    height:70px;
+}
+.group-add li label{width:70px;height:40px;line-height:40px;float:left;font-size:14px;color:#a8a8a8}
+.group-add li input{width:288px;height:38px;border:1px solid #e0e0e0;float:left;outline:none;text-indent:10px;background-color:#f8f8f8}
+ #img {width:288px;height:38px;border:none ;float:left;outline:none;text-indent:10px;background-color:#f8f8f8}
+.group-add li.add_sub input{width:360px;height:40px;background-color: #2b669a;font-size:18px;color:#fff;font-family:'Microsoft Yahei';cursor:pointer;}
+.group-add li .error_tip{float:left;height:30px;line-height:30px;margin-left:70px;color:#e62e2e;display:none;}
+/*.group-add li .error_tip2{float:left;height:20px;line-height:20px;color:#e62e2e;display:none;}*/

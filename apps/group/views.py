@@ -21,3 +21,5 @@ class GroupUserView(View):
             "page": "group"
         }
         return render(request, 'group_user.html', context)
+
+

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}愿望清单-注册{% endblock title %}
+{% load staticfiles %}
+{% block topfiles %}
+    <script type="text/javascript" src={% static "js/jquery-1.12.4.min.js" %}></script>
+    <script type="text/javascript" src={% static "js/register.js" %}></script>
+{% endblock topfiles %}
+
+{% block header_con %}
+{% endblock header_con %}
+
+{% block body %}
+
+    <div class="container">
+
+        <form class="form-register" method="post">
+            {% csrf_token %}
+            <h2 class="form-register-heading">注册</h2>
+            {{ errmsg }}
+
+            <label for="user_name" class="sr-only">请输入账号</label>
+            <input type="text" id="user_name" name="user_name" class="form-control" placeholder="请输入账号" required autofocus>
+            <span class="error_tip">提示信息</span>
+
+            <label for="pwd" class="sr-only">请输入密码</label>
+            <input type="password" id="pwd" name="pwd" class="form-control" placeholder="请输入密码" required>
+            <span class="error_tip">提示信息</span>
+
+            <label for="cpwd" class="sr-only">请输入密码</label>
+            <input type="password" id="cpwd" name="cpwd" class="form-control" placeholder="请再次输入密码" required>
+            <span class="error_tip">提示信息</span>
+
+            <label for="email" class="sr-only">请输入邮箱</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="请输入邮箱" required>
+            <span class="error_tip">提示信息</span>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
+        </form>
+    </div> <!-- /container -->
+
+{% endblock body %}
+
+
