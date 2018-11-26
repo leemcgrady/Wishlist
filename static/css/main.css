@@ -7,10 +7,23 @@
     border-bottom: 1px solid #eee;
     display: inline-block;
 }
-.add-group {
+
+.right-button {
     height: 40px;
     border-bottom: 1px solid #eee;
     float: right;
+    background: #2b669a;
+    text-align:center;
+    width: 100px;
+    border-radius: 5px;
+}
+.right-button a {
+    display: block;
+    color: white;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    text-decoration: none;
 }
 /*
  * Top navigation
@@ -80,7 +93,13 @@
     padding-top: 50px;
 }
 
-
+.table-image img {
+    height: 50px;
+    width:auto;
+}
+.table-image {
+    line-height: 50px;
+}
 /*
  * Placeholder dashboard ideas
  */
@@ -197,10 +216,11 @@
 }
 .group-add li{
     height:70px;
+    text-align:center; vertical-align:middle;
 }
 .group-add li label{width:70px;height:40px;line-height:40px;float:left;font-size:14px;color:#a8a8a8}
-.group-add li input{width:288px;height:38px;border:1px solid #e0e0e0;float:left;outline:none;text-indent:10px;background-color:#f8f8f8}
- #img {width:288px;height:38px;border:none ;float:left;outline:none;text-indent:10px;background-color:#f8f8f8}
+.group-add li input{width:288px;height:35px;border:1px solid #e0e0e0;float:left;outline:none;text-indent:10px;background-color:#f8f8f8}
+.group-add .input-file {border:none; text-indent: 0; line-height: 35px}
 .group-add li.add_sub input{width:360px;height:40px;background-color: #2b669a;font-size:18px;color:#fff;font-family:'Microsoft Yahei';cursor:pointer;}
 .group-add li .error_tip{float:left;height:30px;line-height:30px;margin-left:70px;color:#e62e2e;display:none;}
 /*.group-add li .error_tip2{float:left;height:20px;line-height:20px;color:#e62e2e;display:none;}*/
