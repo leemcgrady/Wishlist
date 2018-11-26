@@ -220,6 +220,7 @@
 }
 .group-add li label{width:70px;height:40px;line-height:40px;float:left;font-size:14px;color:#a8a8a8}
 .group-add li input{width:288px;height:35px;border:1px solid #e0e0e0;float:left;outline:none;text-indent:10px;background-color:#f8f8f8}
+.group-add li select{width:100px;height:35px;border:1px solid #e0e0e0;float:left;outline:none;text-indent:10px;background-color:#f8f8f8}
 .group-add .input-file {border:none; text-indent: 0; line-height: 35px}
 .group-add li.add_sub input{width:360px;height:40px;background-color: #2b669a;font-size:18px;color:#fff;font-family:'Microsoft Yahei';cursor:pointer;}
 .group-add li .error_tip{float:left;height:30px;line-height:30px;margin-left:70px;color:#e62e2e;display:none;}
